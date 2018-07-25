@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './Stylesheets/HomePage.css';
 
 import { BrowserRouter as Router, Link, Route, Switch, Redirect } from 'react-router-dom';
-import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 class HomePage extends Component {
   render() {
