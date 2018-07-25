@@ -1,0 +1,31 @@
+#photography-body #text-container {
+  float: none;
+  position: absolute;
+  padding: 40px;
+  padding-top: 20px;
+  margin: 0px;
+  height: 100%;
+  background-color: #eeeeee;
+  width: 200px;
+  color: #212121;
+}
+
+#photography-body #name {
+  font-size: 32px;
+}
+
+#photography-body #sidebar-nav {
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: "Didot", serif;
+}
+
+#photography-body #sidebar-nav ul {
+  list-style: none;
+  padding-left: 10px;
+  margin-top: 0px;
+}
+
+#photography-body #sidebar-nav ul li {
+  margin: 2px 0px;
+}

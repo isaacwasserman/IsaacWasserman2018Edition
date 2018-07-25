@@ -9,6 +9,11 @@ body {
 	font-smoothing: antialiased;
 }
 
+a:link, a:visited, a:hover, a:focus, a:active{
+  color: #212121;
+  text-decoration: none;
+}
+
 #cutout {
   width: 60%;
   height: 100%;
@@ -28,44 +33,46 @@ body {
   /* background-color: blue; */
 }
 
-h1 {
+h1.link-section {
   /* background-color: white; */
   font-family: 'Didot', sans-serif;
   font-size: 40px;
   margin-bottom: 0px;
+  color: #212121;
 }
 
-h3 {
+h3.link-section {
   margin-top: 10px;
   /* background-color: white; */
   font-family: 'Didot', sans-serif;
   font-size: 32px;
+  color: #212121 !important;
 }
 
-h3 span {
+h3.link-section span {
   text-decoration: underline;
   cursor: pointer;
 }
-h3 span:hover {
+h3.link-section span:hover {
   opacity: 0.5;
 }
 
-h3 span:nth-of-type(1) {
+#first-link-section span:nth-of-type(1) a {
   text-decoration-color: #FF00F3;
   -webkit-text-decoration-color: #FF00F3;
 }
-h3 span:nth-of-type(2) {
+#first-link-section span:nth-of-type(2) a {
   text-decoration-color: #00FFCE;
   -webkit-text-decoration-color: #00FFCE;
 }
-h3 span:nth-of-type(3) {
+#first-link-section span:nth-of-type(3) a {
   text-decoration-color: #00B1FF;
   -webkit-text-decoration-color: #00B1FF;
 }
 
-h3:nth-of-type(2) span {
-  text-decoration-color: #000000;
-  -webkit-text-decoration-color: #000000;
+#learning-link {
+  text-decoration-color: #212121 !important;
+  -webkit-text-decoration-color: #212121;
   text-decoration-style: dashed;
 }
 
