@@ -33,6 +33,10 @@ a:link, a:visited, a:hover, a:focus, a:active{
   /* background-color: blue; */
 }
 
+#name {
+  font-family: 'Didot', sans-serif;
+}
+
 h1.link-section {
   /* background-color: white; */
   font-family: 'Didot', sans-serif;
