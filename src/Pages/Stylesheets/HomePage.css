@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'Didot';
+  src: url('../Fonts/Didot.ttf') format('truetype');
+}
+
+body {
+  margin-bottom: 0px;
+	-moz-osx-font-smoothing: grayscale;
+	font-smoothing: antialiased;
+}
+
+#cutout {
+  width: 60%;
+  height: 100%;
+  position: fixed;
+  background: url("../Images/Cutout.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+#text-container {
+  width: calc(28% - 70px);
+  float: right;
+  margin-right: 80px;
+  margin-left: 30px;
+  margin-top: 50px;
+  /* background-color: blue; */
+}
+
+h1 {
+  /* background-color: white; */
+  font-family: 'Didot', sans-serif;
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+h3 {
+  margin-top: 10px;
+  /* background-color: white; */
+  font-family: 'Didot', sans-serif;
+  font-size: 32px;
+}
+
+h3 span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+h3 span:hover {
+  opacity: 0.5;
+}
+
+h3 span:nth-of-type(1) {
+  text-decoration-color: #FF00F3;
+  -webkit-text-decoration-color: #FF00F3;
+}
+h3 span:nth-of-type(2) {
+  text-decoration-color: #00FFCE;
+  -webkit-text-decoration-color: #00FFCE;
+}
+h3 span:nth-of-type(3) {
+  text-decoration-color: #00B1FF;
+  -webkit-text-decoration-color: #00B1FF;
+}
+
+h3:nth-of-type(2) span {
+  text-decoration-color: #000000;
+  -webkit-text-decoration-color: #000000;
+  text-decoration-style: dashed;
+}
+
+
+@media only screen and (max-width: 850px) {
+    #text-container {
+        float: none;
+        margin: 50 auto;
+        max-width: 100%;
+        width: auto;
+    }
+
+    #cutout {
+      position: absolute;
+      bottom: 0px;
+      width: calc(100% - 20px);
+      height: 300px;
+      background-position: bottom center;
+    }
+}
