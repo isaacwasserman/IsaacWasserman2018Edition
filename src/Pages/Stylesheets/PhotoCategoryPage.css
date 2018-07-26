@@ -14,7 +14,7 @@
   transform: scale(1.01);
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (orientation: portrait) {
   #photography-body .react-photo-gallery--gallery {
     float: none;
     width: 100%;

@@ -291,8 +291,9 @@ class PhotoCategoryPage extends Component {
             <Link to="/photography">
               <div id="name" class="link-section">
                 <h1>Isaac</h1>
-                <h1>Wasserman</h1>
-                <div></div>
+                <h1>Wasserman
+                  <div></div>
+                </h1>
               </div>
             </Link>
             <div id="sidebar-nav" class="link-section">
