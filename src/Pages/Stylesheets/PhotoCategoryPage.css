@@ -1,5 +1,17 @@
-Gallery {
-  width: calc(100% - 250px);
+.react-photo-gallery--gallery {
+  width: calc(100% - 260px);
   height: 100%;
   float: right;
 }
+
+.react-photo-gallery--gallery div img {
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+
+/* .react-photo-gallery--gallery div img:hover {
+  z-index: 100;
+  outline: solid white 4px;
+  transform: scale(1.05);
+} */
