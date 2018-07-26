@@ -60,9 +60,11 @@ h3.link-section span {
   text-decoration: underline;
   cursor: pointer;
 }
-h3.link-section span:hover {
+
+/* Found in @media hover */
+/* h3.link-section span:hover {
   opacity: 0.5;
-}
+} */
 
 #first-link-section span:nth-of-type(1) a {
   text-decoration-color: #FF00F3;
@@ -83,6 +85,11 @@ h3.link-section span:hover {
   text-decoration-style: dashed;
 }
 
+@media (hover: hover) {
+  h3.link-section span:hover {
+    opacity: 0.5;
+  }
+}
 
 @media only screen and (max-width: 850px) {
     #text-container {
