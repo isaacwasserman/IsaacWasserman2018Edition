@@ -1,21 +1,29 @@
 import React, { Component } from 'react';
 import './Stylesheets/PhotographyPage.css';
 
+import { BrowserRouter as Router, Link, Route, Switch, Redirect } from 'react-router-dom';
+
 class PhotographyPage extends Component {
   render() {
     return (
       <div id="photography-body">
         <div id="text-container">
-          <h1 id="name" class="link-section">Isaac<br/>Wasserman</h1>
+          <div id="name" class="link-section">
+            <h1>Isaac</h1>
+            <h1>Wasserman</h1>
+          </div>
           <div id="sidebar-nav" class="link-section">
             <ul>
-              <li>Portraits</li>
-              <li>Nature</li>
-              <li>People</li>
-              <li>Portraits</li>
-              <li>More</li>
+              <Link to="/photography/portraits"><li>Portraits</li>,</Link>&nbsp;
+              <Link to="/photography/nature"><li>Nature</li>,</Link>&nbsp;
+              <Link to="/photography/people"><li>People</li>,</Link>&nbsp;
+              <Link to="/photography/more"><li>More</li></Link>
             </ul>
           </div>
+        </div>
+        <div id="feature-images">
+          <div class="feature-image"></div>
+          <div class="feature-image"></div>
         </div>
       </div>
     );

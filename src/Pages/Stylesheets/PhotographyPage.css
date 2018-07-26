@@ -1,3 +1,10 @@
+#photography-body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+
 #photography-body #text-container {
   float: none;
   position: absolute;
@@ -5,18 +12,22 @@
   padding-top: 20px;
   margin: 0px;
   height: 100%;
-  background-color: #eeeeee;
   width: 200px;
   color: #212121;
 }
 
-#photography-body #name {
+#photography-body #name h1 {
+  display: inline-block;
+  margin: 0px;
   font-size: 32px;
+  color: white;
+  background-color: black;
+  padding: 2px 10px;
 }
 
 #photography-body #sidebar-nav {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 22px;
   font-family: "Didot", serif;
 }
 
@@ -28,4 +39,41 @@
 
 #photography-body #sidebar-nav ul li {
   margin: 2px 0px;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 18px;
+}
+
+#photography-body #sidebar-nav ul li:hover {
+  /* text-decoration: underline;
+  text-decoration-color: #FF00F3;
+  -webkit-text-decoration-color: #FF00F3; */
+  border-bottom: 3px solid #FF00F3;
+  line-height: 15px;
+}
+
+#feature-images {
+  width: calc(100% - 250px);
+  height: 100%;
+  float: right;
+}
+
+.feature-image {
+  height: 100%;
+  width: calc(50% - 8px);
+  background-color: lightgrey;
+  float: left;
+}
+
+.feature-image:first-of-type {
+  margin-right: 16px;
+  background-image: url("../Images/PhotographyHome/Feature1.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.feature-image:last-of-type {
+  background-image: url("../Images/PhotographyHome/Feature2.jpg");
+  background-size: cover;
+  background-position: center center;
 }
