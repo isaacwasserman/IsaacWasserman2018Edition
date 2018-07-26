@@ -12,7 +12,7 @@
   padding-top: 20px;
   margin: 0px;
   height: 100%;
-  width: 200px;
+  width: 186px;
   color: #212121;
 }
 
@@ -23,6 +23,16 @@
   color: white;
   background-color: black;
   padding: 2px 10px;
+  font-family: "Didot", serif;
+}
+
+#photography-body #name div {
+  background-color: #FF00F3;
+  font-family: sans-serif;
+  margin-top: 0px;
+  position: relative;
+  top: -2px;
+  height: 3px;
 }
 
 #photography-body #sidebar-nav {

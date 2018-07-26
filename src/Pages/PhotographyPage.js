@@ -8,10 +8,13 @@ class PhotographyPage extends Component {
     return (
       <div id="photography-body">
         <div id="text-container">
-          <div id="name" class="link-section">
-            <h1>Isaac</h1>
-            <h1>Wasserman</h1>
-          </div>
+          <Link to="/photography">
+            <div id="name" class="link-section">
+              <h1>Isaac</h1>
+              <h1>Wasserman</h1>
+              <div></div>
+            </div>
+          </Link>
           <div id="sidebar-nav" class="link-section">
             <ul>
               <Link to="/photography/portraits"><li>Portraits</li>,</Link>&nbsp;

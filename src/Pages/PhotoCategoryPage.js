@@ -261,6 +261,8 @@ class PhotoCategoryPage extends Component {
     open: false
   };
 
+
+
   handleClickPrev = () => {
     this.setState({ index: this.state.index - 1 });
   };
@@ -284,31 +286,34 @@ class PhotoCategoryPage extends Component {
   render() {
 
     return (
-      <div id="photography-body">
-        <div id="text-container">
-          <div id="name" class="link-section">
-            <h1>Isaac</h1>
-            <h1>Wasserman</h1>
+        <div id="photography-body">
+          <div id="text-container">
+            <Link to="/photography">
+              <div id="name" class="link-section">
+                <h1>Isaac</h1>
+                <h1>Wasserman</h1>
+                <div></div>
+              </div>
+            </Link>
+            <div id="sidebar-nav" class="link-section">
+              <ul>
+                <Link to="/photography/people"><li>People</li>,</Link>&nbsp;
+                <Link to="/photography/nature"><li>Nature</li>,</Link>&nbsp;
+                <Link to="/photography/portraits"><li>Portraits</li>,</Link>&nbsp;
+                <Link to="/photography/more"><li>More</li></Link>
+              </ul>
+            </div>
           </div>
-          <div id="sidebar-nav" class="link-section">
-            <ul>
-              <Link to="/photography/portraits"><li>Portraits</li>,</Link>&nbsp;
-              <Link to="/photography/nature"><li>Nature</li>,</Link>&nbsp;
-              <Link to="/photography/people"><li>People</li>,</Link>&nbsp;
-              <Link to="/photography/more"><li>More</li></Link>
-            </ul>
-          </div>
+          <GooglePhoto
+            open={this.state.open}
+            src={PhotoSets[this.props.match.params.category]}
+            srcIndex={this.state.index}
+            onClickPrev={this.handleClickPrev}
+            onClickNext={this.handleClickNext}
+            onClose={this.handleClose}
+          />
+          <Gallery id="gallery" photos={PhotoSets[this.props.match.params.category]} onClick={this.BigPicture} />
         </div>
-        <GooglePhoto
-          open={this.state.open}
-          src={PhotoSets[this.props.match.params.category]}
-          srcIndex={this.state.index}
-          onClickPrev={this.handleClickPrev}
-          onClickNext={this.handleClickNext}
-          onClose={this.handleClose}
-        />
-        <Gallery id="gallery" photos={PhotoSets[this.props.match.params.category]} onClick={this.BigPicture} />
-      </div>
     );
   }
 }

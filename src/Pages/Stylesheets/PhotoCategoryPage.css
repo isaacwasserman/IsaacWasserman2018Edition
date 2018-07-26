@@ -1,17 +1,38 @@
-.react-photo-gallery--gallery {
+#photography-body .react-photo-gallery--gallery {
   width: calc(100% - 260px);
   height: 100%;
   float: right;
 }
 
-.react-photo-gallery--gallery div img {
+#photography-body .react-photo-gallery--gallery div img {
   cursor: pointer;
   transform: scale(1);
   transition: transform 0.5s;
 }
 
-/* .react-photo-gallery--gallery div img:hover {
-  z-index: 100;
-  outline: solid white 4px;
-  transform: scale(1.05);
-} */
+#photography-body .react-photo-gallery--gallery div img:hover {
+  transform: scale(1.01);
+}
+
+@media only screen and (max-width: 850px) {
+  #photography-body .react-photo-gallery--gallery {
+    float: none;
+    width: 100%;
+  }
+
+  #photography-body #text-container {
+    position: static;
+    height: auto;
+    width: auto;
+  }
+
+  #photography-body #text-container #name {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  #photography-body #text-container #sidebar-nav {
+    text-align: center;
+  }
+
+}
