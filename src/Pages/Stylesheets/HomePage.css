@@ -3,6 +3,10 @@
   src: url('../Fonts/Didot.ttf') format('truetype');
 }
 
+* {
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
 body {
   margin-bottom: 0px;
 	-moz-osx-font-smoothing: grayscale;
