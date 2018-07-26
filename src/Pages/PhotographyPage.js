@@ -23,9 +23,9 @@ class PhotographyPage extends Component {
           </Link>
           <div id="sidebar-nav" class="link-section">
             <ul>
-              <Link to="/photography/portraits"><li>Portraits</li>,</Link>&nbsp;
-              <Link to="/photography/nature"><li>Nature</li>,</Link>&nbsp;
               <Link to="/photography/people"><li>People</li>,</Link>&nbsp;
+              <Link to="/photography/nature"><li>Nature</li>,</Link>&nbsp;
+              <Link to="/photography/portraits"><li>Portraits</li>,</Link>&nbsp;
               <Link to="/photography/more"><li>More</li></Link>
             </ul>
           </div>
