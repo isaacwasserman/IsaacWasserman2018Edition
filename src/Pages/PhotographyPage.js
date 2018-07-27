@@ -13,7 +13,7 @@ class PhotographyPage extends Component {
     return (
       <div id="photography-body">
         <div id="text-container">
-          <Link to="/photography">
+          <Link to="/">
             <div id="name" class="link-section">
               <h1>Isaac</h1>
               <h1>Wasserman
