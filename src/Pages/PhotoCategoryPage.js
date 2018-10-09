@@ -3,6 +3,8 @@ import './Stylesheets/PhotoCategoryPage.css';
 
 import { BrowserRouter as Router, Link, Route, Switch, Redirect } from 'react-router-dom';
 
+import { BrowserView, MobileView, isBrowser, isMobile } from "react-device-detect";
+
 import Gallery from 'react-photo-gallery';
 import GooglePhoto from 'react-google-photo';
 
@@ -280,7 +282,9 @@ class PhotoCategoryPage extends Component {
   };
 
   BigPicture = (event, obj) => {
-    this.setState({index: obj.index, open: true});
+    if(isBrowser){
+      this.setState({index: obj.index, open: true});
+    }
   };
 
   render() {

@@ -6,6 +6,7 @@
     "image-size": "^0.6.3",
     "react": "^16.3.1",
     "react-bigpicture": "^1.0.5",
+    "react-device-detect": "^1.6.1",
     "react-dom": "^16.3.1",
     "react-google-photo": "^0.1.0",
     "react-measure": "^2.0.0",
