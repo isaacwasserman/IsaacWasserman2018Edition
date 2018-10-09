@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import HomePage from './Pages/HomePage.js';
 import PhotographyPage from './Pages/PhotographyPage.js';
 import PhotoCategoryPage from './Pages/PhotoCategoryPage.js';
+import TechnologyPage from './Pages/TechnologyPage.js';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
           <Route exact path="/" component={HomePage}/>
           <Route exact path="/photography" component={PhotographyPage}/>
           <Route path="/photography/:category" component={PhotoCategoryPage}/>
+          <Route exact path="/technology" component={TechnologyPage}/>
         </Switch>
       </body>
     );

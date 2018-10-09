@@ -10,8 +10,8 @@ class HomePage extends Component {
         <div id="cutout"></div>
         <div id="text-container">
           <h1 id="name">Isaac<br/>Wasserman</h1>
-          <h3 id="first-link-section" class="link-section"><span><Link to="/photography">Photographer</Link></span>, <span><Link to="/photography">Technologist</Link></span>, <span><Link to="/photography">Chef</Link></span>.</h3>
-          <h3 class="link-section">Always <span id="learning-link"><Link to="/photography">learning</Link></span>.</h3>
+          <h3 id="first-link-section" class="link-section"><span><Link to="/photography">Photographer</Link></span>, <span><Link to="/technology">Technologist</Link></span>.</h3>
+          {/*<h3 class="link-section">Always <span id="learning-link"><Link to="/photography">learning</Link></span>.</h3>*/}
         </div>
       </div>
     );

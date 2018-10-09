@@ -3,6 +3,11 @@
   src: url('../Fonts/Didot.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Cheltenham Italic';
+  src: url('../Fonts/nyt-cheltenham-700-italic.ttf') format('truetype');
+}
+
 * {
   -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
@@ -41,7 +46,8 @@ a:link, a:visited, a:hover, a:focus, a:active{
 }
 
 #name {
-  font-family: 'Didot', sans-serif;
+  font-family: 'Cheltenham Italic', sans-serif;
+  color: #212121;
 }
 
 h1.link-section {
@@ -55,9 +61,10 @@ h1.link-section {
 h3.link-section {
   margin-top: 10px;
   /* background-color: white; */
-  font-family: 'Didot', sans-serif;
+  font-family: 'Cheltenham Italic', sans-serif;
   font-size: 32px;
   color: #212121 !important;
+  line-height: 40px;
 }
 
 h3.link-section span {

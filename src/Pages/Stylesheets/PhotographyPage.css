@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'Cheltenham Italic Bold';
+  src: url('../Fonts/nyt-cheltenham-700-italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cheltenham Italic';
+  src: url('../Fonts/nyt-cheltenham-300-italic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Cheltenham';
+  src: url('../Fonts/nyt-cheltenham-400-normal.ttf') format('truetype');
+}
+
 #photography-body {
   margin: 0px;
   padding: 0px;
@@ -23,7 +38,8 @@
   color: white;
   background-color: black;
   padding: 2px 10px;
-  font-family: "Didot", serif;
+  padding-top: 6px;
+  font-family: 'Cheltenham Italic Bold';
 }
 
 #photography-body #name h1 div {
@@ -40,7 +56,7 @@
 #photography-body #sidebar-nav {
   margin-top: 10px;
   font-size: 22px;
-  font-family: "Didot", serif;
+  font-family: "Cheltenham", serif;
 }
 
 #photography-body #sidebar-nav ul {
@@ -54,7 +70,7 @@
 }
 
 #photography-body #sidebar-nav ul li {
-  margin: 2px 0px;
+  margin: 5px 0px;
   cursor: pointer;
   display: inline-block;
   line-height: 18px;
