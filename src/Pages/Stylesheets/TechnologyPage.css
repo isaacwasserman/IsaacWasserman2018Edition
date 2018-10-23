@@ -48,6 +48,12 @@
   }
 }
 
+@media (max-width: 730px){
+  .TechGalleryItem {
+    margin-bottom: 50px;
+  }
+}
+
 #Gallery {
   width: 800px;
   max-width: 100%;

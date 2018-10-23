@@ -77,12 +77,12 @@ h3.link-section span:hover {
   opacity: 0.5;
 }
 
-#first-link-section span:nth-of-type(1) a {
+#first-link-section span:nth-of-type(2) a {
   text-decoration-color: #FF00F3;
   -webkit-text-decoration-color: #FF00F3;
   -moz-text-decoration-color: #FF00F3;
 }
-#first-link-section span:nth-of-type(2) a {
+#first-link-section span:nth-of-type(1) a {
   text-decoration-color: #00FFCE;
   -webkit-text-decoration-color: #00FFCE;
   -moz-text-decoration-color: #00FFCE;

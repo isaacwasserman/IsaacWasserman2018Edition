@@ -49,42 +49,54 @@ class TechnologyPage extends Component {
           </div>
         </Link>
         <div id="Gallery">
-          <div className="TechGalleryItem">
-            <Dimensional className="TechGalleryItemDimensional" width={325} height={200} distance={10} color={'lightgrey'}>
-              <img className="TechGalleryItemImage" src={require('./Images/Technologist/GalleryImages/EngCode.png')}/>
-              <h4 className="TechGalleryItemTitle">EngCode</h4>
-            </Dimensional>
-          </div>
-          <div className="TechGalleryItem">
-            <Dimensional className="TechGalleryItemDimensional" width={325} height={200} distance={10} color={'lightgrey'} style={{marginBottom: '50px'}}>
-              <img className="TechGalleryItemImage" src={require('./Images/Technologist/GalleryImages/BathtubVR.png')}/>
-              <h4 className="TechGalleryItemTitle">BathtubVR</h4>
-            </Dimensional>
-          </div>
-          <div className="TechGalleryItem">
-            <Dimensional className="TechGalleryItemDimensional" width={325} height={200} distance={10} color={'lightgrey'} style={{marginBottom: '50px'}}>
-              <img className="TechGalleryItemImage" src={require('./Images/Technologist/GalleryImages/LosMonos.png')}/>
-              <h4 className="TechGalleryItemTitle">Los Monos</h4>
-            </Dimensional>
-          </div>
-          <div className="TechGalleryItem">
-            <Dimensional className="TechGalleryItemDimensional" width={325} height={200} distance={10} color={'lightgrey'} style={{marginBottom: '50px'}}>
-              <img className="TechGalleryItemImage" src={require('./Images/Technologist/GalleryImages/WhenISay.png')}/>
-              <h4 className="TechGalleryItemTitle">When I Say</h4>
-            </Dimensional>
-          </div>
-          <div className="TechGalleryItem">
-            <Dimensional className="TechGalleryItemDimensional" width={325} height={200} distance={10} color={'lightgrey'} style={{marginBottom: '50px'}}>
-              <img className="TechGalleryItemImage" src={require('./Images/Technologist/GalleryImages/KimKalldashian.png')}/>
-              <h4 className="TechGalleryItemTitle">Kim Kalldashian</h4>
-            </Dimensional>
-          </div>
-          <div className="TechGalleryItem">
-            <Dimensional className="TechGalleryItemDimensional" width={325} height={200} distance={10} color={'lightgrey'} style={{marginBottom: '50px'}}>
-              <img className="TechGalleryItemImage" src={require('./Images/Technologist/GalleryImages/AMFE.png')}/>
-              <h4 className="TechGalleryItemTitle">AMFE Website</h4>
-            </Dimensional>
-          </div>
+          <Link to="/technology/EngCode">
+            <div className="TechGalleryItem">
+              <Dimensional className="TechGalleryItemDimensional" width={325} height={200} distance={10} color={'lightgrey'}>
+                <img className="TechGalleryItemImage" src={require('./Images/Technologist/GalleryImages/EngCode.png')}/>
+                <h4 className="TechGalleryItemTitle">EngCode</h4>
+              </Dimensional>
+            </div>
+          </Link>
+          <Link to="/technology/BathtubVR">
+            <div className="TechGalleryItem">
+              <Dimensional className="TechGalleryItemDimensional" width={325} height={200} distance={10} color={'lightgrey'} style={{marginBottom: '50px'}}>
+                <img className="TechGalleryItemImage" src={require('./Images/Technologist/GalleryImages/BathtubVR.png')}/>
+                <h4 className="TechGalleryItemTitle">BathtubVR</h4>
+              </Dimensional>
+            </div>
+          </Link>
+          <Link to="/technology/LosMonos">
+            <div className="TechGalleryItem">
+              <Dimensional className="TechGalleryItemDimensional" width={325} height={200} distance={10} color={'lightgrey'} style={{marginBottom: '50px'}}>
+                <img className="TechGalleryItemImage" src={require('./Images/Technologist/GalleryImages/LosMonos.png')}/>
+                <h4 className="TechGalleryItemTitle">Los Monos</h4>
+              </Dimensional>
+            </div>
+          </Link>
+          <Link to="/technology/WhenISay">
+            <div className="TechGalleryItem">
+              <Dimensional className="TechGalleryItemDimensional" width={325} height={200} distance={10} color={'lightgrey'} style={{marginBottom: '50px'}}>
+                <img className="TechGalleryItemImage" src={require('./Images/Technologist/GalleryImages/WhenISay.png')}/>
+                <h4 className="TechGalleryItemTitle">When I Say</h4>
+              </Dimensional>
+            </div>
+          </Link>
+          <Link to="/technology/KimKalldashian">
+            <div className="TechGalleryItem">
+              <Dimensional className="TechGalleryItemDimensional" width={325} height={200} distance={10} color={'lightgrey'} style={{marginBottom: '50px'}}>
+                <img className="TechGalleryItemImage" src={require('./Images/Technologist/GalleryImages/KimKalldashian.png')}/>
+                <h4 className="TechGalleryItemTitle">Kim Kalldashian</h4>
+              </Dimensional>
+            </div>
+          </Link>
+          <Link to="/technology/AMFEWebsite">
+            <div className="TechGalleryItem">
+              <Dimensional className="TechGalleryItemDimensional" width={325} height={200} distance={10} color={'lightgrey'} style={{marginBottom: '50px'}}>
+                <img className="TechGalleryItemImage" src={require('./Images/Technologist/GalleryImages/AMFE.png')}/>
+                <h4 className="TechGalleryItemTitle">AMFE Website</h4>
+              </Dimensional>
+            </div>
+          </Link>
         </div>
       </div>
     );

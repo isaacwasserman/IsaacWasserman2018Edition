@@ -83,6 +83,11 @@ const Portrait_Set = [
 
 const Nature_Set = [
   {
+    src: require('./Images/Nature/TrunkCacti.jpg'),
+    width: 2560,
+    height: 1706
+  },
+  {
     src: require('./Images/Nature/Nature01.jpg'),
     width: 2048,
     height: 1152
@@ -176,6 +181,11 @@ const People_Set = [
     height: 1366
   },
   {
+    src: require('./Images/People/EthanBobbing.jpg'),
+    width: 3907,
+    height: 5860
+  },
+  {
     src: require('./Images/People/People04.jpg'),
     width: 2048,
     height: 1366
@@ -184,6 +194,11 @@ const People_Set = [
     src: require('./Images/People/People05.jpg'),
     width: 2048,
     height: 1366
+  },
+  {
+    src: require('./Images/People/AharonBeach.jpg'),
+    width: 1708,
+    height: 2415
   },
   {
     src: require('./Images/People/People06.jpg'),
