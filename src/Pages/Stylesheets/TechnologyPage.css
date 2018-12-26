@@ -70,6 +70,7 @@
   transition: transform 0.1s;
   transform: scale(1);
   cursor: pointer;
+  margin-bottom: 45px;
 }
 
 .TechGalleryItem:hover {

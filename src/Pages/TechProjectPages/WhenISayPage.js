@@ -28,7 +28,7 @@ class WhenISayPage extends Component {
             <br></br><br></br>
             "Ho!"
             <br></br><br></br>
-            When I say is a social app that allows you to do anything from posting a funny jingle to conveying a poignant message with a song. In When I Say, you make your own call and response songs similar to the hip-hop music of the Mid '90s. While it doesn't necessarily have a utility to it, it can be a fun way to communicate anything!
+            When I say is a social app that allows you to do anything from post a funny jingle to convey a poignant message with a song. In When I Say, you make your own call and response songs similar to the hip-hop music of the Mid '90s. While it doesn't necessarily have a utility, it can be a fun way to communicate anything!
           </p>
           <a class="OutsideLink" href="https://itunes.apple.com/us/app/when-i-say/id1006415871?mt=8" target="_blank">When I Say on the App Store</a>
         </div>

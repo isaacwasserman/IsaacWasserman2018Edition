@@ -16,6 +16,7 @@ import LosMonosPage from './Pages/TechProjectPages/LosMonosPage.js';
 import WhenISayPage from './Pages/TechProjectPages/WhenISayPage.js';
 import KimKalldashianPage from './Pages/TechProjectPages/KimKalldashianPage.js';
 import AMFEWebsitePage from './Pages/TechProjectPages/AMFEWebsitePage.js';
+import FortySixPage from './Pages/TechProjectPages/FortySixPage.js';
 
 class App extends Component {
   render() {
@@ -34,6 +35,7 @@ class App extends Component {
           <Route exact path="/technology/WhenISay" component={WhenISayPage}/>
           <Route exact path="/technology/KimKalldashian" component={KimKalldashianPage}/>
           <Route exact path="/technology/AMFEWebsite" component={AMFEWebsitePage}/>
+          <Route exact path="/technology/FortySix" component={FortySixPage}/>
         </Switch>
       </body>
     );

@@ -49,6 +49,14 @@ class TechnologyPage extends Component {
           </div>
         </Link>
         <div id="Gallery">
+          <Link to="/technology/FortySix">
+            <div className="TechGalleryItem">
+              <Dimensional className="TechGalleryItemDimensional" width={325} height={200} distance={10} color={'lightgrey'}>
+                <img className="TechGalleryItemImage" src={require('./Images/Technologist/GalleryImages/FortySix.png')}/>
+                <h4 className="TechGalleryItemTitle">Forty Six</h4>
+              </Dimensional>
+            </div>
+          </Link>
           <Link to="/technology/EngCode">
             <div className="TechGalleryItem">
               <Dimensional className="TechGalleryItemDimensional" width={325} height={200} distance={10} color={'lightgrey'}>

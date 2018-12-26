@@ -73,7 +73,8 @@
   margin: 5px 0px;
   cursor: pointer;
   display: inline-block;
-  line-height: 18px;
+  border-bottom: 3px solid #FF00F344;
+  line-height: 15px;
 }
 
 #photography-body #sidebar-nav ul li:hover {
