@@ -22,7 +22,7 @@ class EngCodePage extends Component {
             <br></br><br></br>
             Use it to send secret messages to your friends that can only be decrypted with a shared 4-digit encryption key.
           </p>
-          <a class="OutsideLink" href="https://engcode.tk" target="_blank">EngCode.tk</a>
+          <a class="OutsideLink" href="https://engcoder-7a5cf.web.app/" target="_blank">Demo</a>
         </div>
         <div id="PhotoColumn">
           <img class="Photo" src={require('../Images/Technologist/Projects/EngCode/Unencoded.png')}/>

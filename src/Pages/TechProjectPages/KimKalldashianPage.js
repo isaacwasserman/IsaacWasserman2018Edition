@@ -18,7 +18,7 @@ class KimKalldashianPage extends Component {
           <h4 id="Subtitle">Web App</h4>
           <h4 id="Year">2015</h4>
           <p id="Description">
-            Give Kim Kalldashian you, your friend, or your enemy's number, and we'll call and read them Kim Kardashian West's latest tweet.
+            Give Kim Kalldashian your friend's or enemy's phone number, and we'll call and read them Kim Kardashian West's latest tweet.
             <br></br><br></br>
             Kim Kalldashian makes use of the Twilio API to make real phone calls using XML and POST requests.
           </p>

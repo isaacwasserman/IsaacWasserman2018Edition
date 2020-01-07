@@ -22,7 +22,7 @@ class BathtubVRPage extends Component {
             <br></br><br></br>
             Bathtub VR is based on AFrame which uses the WebVR specification to display multiplatform virtual reality in the browser.
           </p>
-          <a class="OutsideLink" href="https://bathtubvr.tk" target="_blank">BathtubVR.tk</a>
+          <a class="OutsideLink" href="https://bathtubvr.web.app/" target="_blank">Demo</a>
         </div>
         <div id="PhotoColumn">
           <img class="Photo" src={require('../Images/Technologist/Projects/BathtubVR/DesktopMode.png')}/>

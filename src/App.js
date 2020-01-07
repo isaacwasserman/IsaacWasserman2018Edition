@@ -18,6 +18,11 @@ import KimKalldashianPage from './Pages/TechProjectPages/KimKalldashianPage.js';
 import AMFEWebsitePage from './Pages/TechProjectPages/AMFEWebsitePage.js';
 import FortySixPage from './Pages/TechProjectPages/FortySixPage.js';
 
+import CookingPage from './Pages/CookingPage.js';
+//Cooking Subpages
+import CookingBlogPage from './Pages/CookingBlogPage.js';
+import CookingAdminPage from './Pages/CookingAdminPage.js';
+
 class App extends Component {
   render() {
     return (
@@ -25,10 +30,11 @@ class App extends Component {
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <Switch>
           <Route exact path="/" component={HomePage}/>
+
           <Route exact path="/photography" component={PhotographyPage}/>
           <Route path="/photography/:category" component={PhotoCategoryPage}/>
-          <Route exact path="/technology" component={TechnologyPage}/>
 
+          <Route exact path="/technology" component={TechnologyPage}/>
           <Route exact path="/technology/EngCode" component={EngCodePage}/>
           <Route exact path="/technology/BathtubVR" component={BathtubVRPage}/>
           <Route exact path="/technology/LosMonos" component={LosMonosPage}/>
@@ -36,6 +42,10 @@ class App extends Component {
           <Route exact path="/technology/KimKalldashian" component={KimKalldashianPage}/>
           <Route exact path="/technology/AMFEWebsite" component={AMFEWebsitePage}/>
           <Route exact path="/technology/FortySix" component={FortySixPage}/>
+
+          <Route exact path="/cooking" component={CookingPage}/>
+          <Route exact path="/cooking/blog" component={CookingBlogPage}/>
+          <Route exact path="/cooking/admin" component={CookingAdminPage}/>
         </Switch>
       </body>
     );
