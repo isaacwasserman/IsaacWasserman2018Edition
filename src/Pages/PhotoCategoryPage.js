@@ -10,258 +10,283 @@ import GooglePhoto from 'react-google-photo';
 
 const Portrait_Set = [
   {
-    src: require('./Images/Portraits/Portrait01.jpg'),
+    src: require('./Images/Portraits/Portraits-14.jpg'),
     width: 2048,
-    height: 1152
+    height: 1366
   },
   {
-    src: require('./Images/Portraits/Portrait02.jpg'),
+    src: require('./Images/Portraits/Portraits-03.jpg'),
+    width: 2048,
+    height: 1366
+  },
+  {
+    src: require('./Images/Portraits/Portraits-06.jpg'),
     width: 1365,
     height: 2048
   },
   {
-    src: require('./Images/Portraits/Portrait03.jpg'),
-    width: 2048,
-    height: 1366
-  },
-  {
-    src: require('./Images/Portraits/Portrait04.jpg'),
-    width: 2048,
-    height: 1366
-  },
-  {
-    src: require('./Images/Portraits/Portrait05.jpg'),
-    width: 1366,
-    height: 2048
-  },
-  {
-    src: require('./Images/Portraits/Portrait06.jpg'),
-    width: 2048,
-    height: 1366
-  },
-  {
-    src: require('./Images/Portraits/Portrait07.jpg'),
-    width: 2048,
-    height: 1366
-  },
-  {
-    src: require('./Images/Portraits/Portrait08.jpg'),
-    width: 2048,
-    height: 1366
-  },
-  {
-    src: require('./Images/Portraits/Portrait09.jpg'),
+    src: require('./Images/Portraits/Portraits-12.jpg'),
     width: 2048,
     height: 1152
   },
   {
-    src: require('./Images/Portraits/Portrait10.jpg'),
+    src: require('./Images/Portraits/Portraits-07.jpg'),
+    width: 2048,
+    height: 1152
+  },
+  {
+    src: require('./Images/Portraits/Portraits-04.jpg'),
     width: 2048,
     height: 1366
   },
   {
-    src: require('./Images/Portraits/Portrait11.jpg'),
+    src: require('./Images/Portraits/Portraits-11.jpg'),
     width: 1366,
     height: 2048
   },
   {
-    src: require('./Images/Portraits/Portrait12.jpg'),
+    src: require('./Images/Portraits/Portraits-02.jpg'),
     width: 2048,
     height: 1366
   },
   {
-    src: require('./Images/Portraits/Portrait13.jpg'),
+    src: require('./Images/Portraits/Portraits-05.jpg'),
     width: 2048,
     height: 1366
   },
   {
-    src: require('./Images/Portraits/Portrait14.jpg'),
+    src: require('./Images/Portraits/Portraits-01.jpg'),
+    width: 2048,
+    height: 1366
+  },
+  {
+    src: require('./Images/Portraits/Portraits-08.jpg'),
+    width: 2048,
+    height: 1366
+  },
+  {
+    src: require('./Images/Portraits/Portraits-09.jpg'),
+    width: 2048,
+    height: 1366
+  },
+  {
+    src: require('./Images/Portraits/Portraits-10.jpg'),
     width: 2048,
     height: 1152
+  },
+  {
+    src: require('./Images/Portraits/Portraits-13.jpg'),
+    width: 1366,
+    height: 2048
   },
 ];
 
 const Nature_Set = [
   {
-    src: require('./Images/Nature/TrunkCacti.jpg'),
-    width: 2560,
-    height: 1706
+    src: require('./Images/Nature/Nature-17.jpg'),
+    width: 2048,
+    height: 1366
   },
   {
-    src: require('./Images/Nature/Nature01.jpg'),
+    src: require('./Images/Nature/Nature-16.jpg'),
+    width: 2048,
+    height: 1366
+  },
+  {
+    src: require('./Images/Nature/Nature-09.jpg'),
+    width: 2048,
+    height: 1365
+  },  
+  {
+    src: require('./Images/Nature/Nature-14.jpg'),
+    width: 2048,
+    height: 1366
+  },
+  {
+    src: require('./Images/Nature/Nature-08.jpg'),
+    width: 2048,
+    height: 1366
+  },
+  {
+    src: require('./Images/Nature/Nature-03.jpg'),
     width: 2048,
     height: 1152
   },
   {
-    src: require('./Images/Nature/Nature02.jpg'),
-    width: 2048,
-    height: 1365
-  },
-  {
-    src: require('./Images/Nature/Nature03.jpg'),
+    src: require('./Images/Nature/Nature-04.jpg'),
     width: 2048,
     height: 1366
   },
   {
-    src: require('./Images/Nature/Nature04.jpg'),
+    src: require('./Images/Nature/Nature-05.jpg'),
     width: 2048,
     height: 1366
   },
   {
-    src: require('./Images/Nature/Nature05.jpg'),
+    src: require('./Images/Nature/Nature-06.jpg'),
     width: 2048,
     height: 1366
   },
   {
-    src: require('./Images/Nature/Nature06.jpg'),
-    width: 2048,
-    height: 1365
-  },
-  {
-    src: require('./Images/Nature/Nature07.jpg'),
+    src: require('./Images/Nature/Nature-07.jpg'),
     width: 2048,
     height: 1366
   },
   {
-    src: require('./Images/Nature/Nature08.jpg'),
+    src: require('./Images/Nature/Nature-02.jpg'),
     width: 2048,
     height: 1366
   },
   {
-    src: require('./Images/Nature/Nature09.jpg'),
+    src: require('./Images/Nature/Nature-10.jpg'),
     width: 2048,
     height: 1366
   },
   {
-    src: require('./Images/Nature/Nature10.jpg'),
-    width: 2048,
-    height: 1365
-  },
-  {
-    src: require('./Images/Nature/Nature11.jpg'),
+    src: require('./Images/Nature/Nature-11.jpg'),
     width: 2048,
     height: 1366
   },
   {
-    src: require('./Images/Nature/Nature12.jpg'),
+    src: require('./Images/Nature/Nature-12.jpg'),
     width: 2048,
     height: 1366
   },
   {
-    src: require('./Images/Nature/Nature13.jpg'),
+    src: require('./Images/Nature/Nature-13.jpg'),
     width: 2048,
     height: 1366
   },
   {
-    src: require('./Images/Nature/Nature14.jpg'),
+    src: require('./Images/Nature/Nature-15.jpg'),
     width: 2048,
     height: 1366
   },
   {
-    src: require('./Images/Nature/Nature15.jpg'),
+    src: require('./Images/Nature/Nature-01.jpg'),
     width: 2048,
     height: 1366
-  }
+  },
 ];
 
 const People_Set = [
   {
-    src: require('./Images/People/People01.jpg'),
+    src: require('./Images/People/People-12.jpg'),
     width: 1366,
     height: 2048
   },
   {
-    src: require('./Images/People/People02.jpg'),
+    src: require('./Images/People/People-07.jpg'),
     width: 2048,
     height: 1366
   },
   {
-    src: require('./Images/People/People03.jpg'),
+    src: require('./Images/People/People-05.jpg'),
     width: 2048,
     height: 1366
   },
   {
-    src: require('./Images/People/EthanBobbing.jpg'),
-    width: 3907,
-    height: 5860
-  },
-  {
-    src: require('./Images/People/People04.jpg'),
+    src: require('./Images/People/People-04.jpg'),
     width: 2048,
     height: 1366
   },
   {
-    src: require('./Images/People/People05.jpg'),
+    src: require('./Images/People/People-01.jpg'),
     width: 2048,
     height: 1366
   },
   {
-    src: require('./Images/People/AharonBeach.jpg'),
-    width: 1708,
-    height: 2415
+    src: require('./Images/People/People-11.jpg'),
+    width: 1449,
+    height: 2048
   },
   {
-    src: require('./Images/People/People06.jpg'),
+    src: require('./Images/People/People-15.jpg'),
+    width: 1366,
+    height: 2048
+  },
+  {
+    src: require('./Images/People/People-14.jpg'),
+    width: 1366,
+    height: 2048
+  },
+  {
+    src: require('./Images/People/People-02.jpg'),
     width: 2048,
     height: 2017
   },
   {
-    src: require('./Images/People/People07.jpg'),
-    width: 2048,
-    height: 1366
-  },
-  {
-    src: require('./Images/People/People08.jpg'),
+    src: require('./Images/People/People-03.jpg'),
     width: 2048,
     height: 2017
   },
   {
-    src: require('./Images/People/People09.jpg'),
-    width: 2048,
-    height: 1366
+    src: require('./Images/People/People-06.jpg'),
+    width: 1365,
+    height: 2048
   },
   {
-    src: require('./Images/People/People10.jpg'),
-    width: 2048,
-    height: 1366
+    src: require('./Images/People/People-08.jpg'),
+    width: 1366,
+    height: 2048
   },
   {
-    src: require('./Images/People/People11.jpg'),
+    src: require('./Images/People/People-09.jpg'),
     width: 2048,
     height: 1358
-  }
+  },
+  {
+    src: require('./Images/People/People-10.jpg'),
+    width: 2048,
+    height: 1366
+  },
+  {
+    src: require('./Images/People/People-13.jpg'),
+    width: 1366,
+    height: 2048
+  },
 ]
 
 const More_Set = [
   {
-    src: require('./Images/More/More01.jpg'),
-    width: 1358,
+    src: require('./Images/More/More-07.jpg'),
+    width: 2048,
+    height: 1366
+  },
+  {
+    src: require('./Images/More/More-08.jpg'),
+    width: 1519,
     height: 2048
   },
   {
-    src: require('./Images/More/More02.jpg'),
+    src: require('./Images/More/More-01.jpg'),
+    width: 2048,
+    height: 1366
+  },
+  {
+    src: require('./Images/More/More-02.jpg'),
+    width: 2048,
+    height: 1366
+  },
+  {
+    src: require('./Images/More/More-06.jpg'),
+    width: 2048,
+    height: 1365
+  },
+  {
+    src: require('./Images/More/More-03.jpg'),
+    width: 2048,
+    height: 1365
+  },
+  {
+    src: require('./Images/More/More-04.jpg'),
     width: 2048,
     height: 1358
   },
   {
-    src: require('./Images/More/More03.jpg'),
-    width: 2048,
-    height: 1366
-  },
-  {
-    src: require('./Images/More/More04.jpg'),
-    width: 2048,
-    height: 1361
-  },
-  {
-    src: require('./Images/More/More05.jpg'),
-    width: 2048,
-    height: 1366
-  },
-  {
-    src: require('./Images/More/More06.jpg'),
-    width: 2048,
-    height: 1365
+    src: require('./Images/More/More-05.jpg'),
+    width: 1358,
+    height: 2048
   },
 ]
 
