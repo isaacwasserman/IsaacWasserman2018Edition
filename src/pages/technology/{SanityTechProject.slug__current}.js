@@ -36,8 +36,8 @@ function TechProject({data}){
 }
 
 export const query = graphql`
-  query($slug: SanitySlugFilterInput) {
-    project: sanityTechProject(slug: $slug) {
+  query($slug__current: String) {
+    project: sanityTechProject(slug: { current: { eq: $slug__current } }) {
       date
       slug {
         current

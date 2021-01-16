@@ -90,6 +90,8 @@
   font-family: sans-serif;
   font-size: 36px;
   margin-bottom: 10px;
+  /* word-break: break-word; */
+  hyphens: auto;
 }
 
 #cooking-body #feed .post .postDetails {
@@ -104,13 +106,14 @@
   font-size: 16px;
   font-weight: normal;
   margin: 0px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 #cooking-body #feed .post .tags {
   font-size: 12px;
   padding: 0px;
   margin: 0px;
+  margin-right: 15px;
   display: flex;
   flex-wrap: wrap;
   font-weight: normal;
@@ -119,11 +122,12 @@
 #cooking-body #feed .post .tags li {
   /* border-bottom: 2.5px solid #00B1FF44; */
   cursor: pointer;
-  display: inline;
+  display: inline-block;
   background-color: #aaa;
   padding: 3px;
   border-radius: 5px;
   color: #eee;
+  margin-bottom: 10px;
 }
 
 #cooking-body #feed .post .tags li:hover {
@@ -148,6 +152,22 @@
 #cooking-body #feed .post .postBody a {
   color: #00B1FF;
   text-decoration: underline;
+}
+
+#cooking-body #feed .post .postBody a:active {
+  color: #00B1FF44;
+}
+
+#cooking-body #feed .post .LinkCopier {
+  font-family: sans-serif;
+  color: #00B1FF;
+  text-decoration: underline;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#cooking-body #feed .post .LinkCopier:active {
+  color: #00B1FF44;
 }
 
 @media (max-width: 920px) {

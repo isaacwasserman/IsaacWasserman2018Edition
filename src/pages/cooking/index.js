@@ -7,6 +7,7 @@ import Img from "gatsby-image"
 import { BlockContent, serializers } from '../../helpers/portableText.js'
 import urlBuilder from '../../helpers/urlBuilder.js'
 import InfiniteScroll from 'react-infinite-scroll-component'
+import CopyToClipboard from 'react-copy-to-clipboard'
 
 import '../../resources/css/cooking.css'
 
@@ -38,7 +39,7 @@ const CookingPage = (props) => {
     console.log("loading next page")
     if (!latestPage.hasNextPage) return
 
-    const collectionId = latestPage.collection.id
+    const collectionId = initialPage.collection.id
     const nextPageId = latestPage.nextPage.id
     const path = withPrefix(
       `/paginated-data/${collectionId}/${nextPageId}.json`,
@@ -153,6 +154,9 @@ const CookingPage = (props) => {
                               ))
                             }
                           </ul>
+                          <CopyToClipboard text={`${props.location.origin}/cooking/${post.slug.current}`}>
+                            <span className="LinkCopier">Copy Link to Post</span>
+                          </CopyToClipboard>
                         </div>
                         <div className="postBody">
                           <BlockContent blocks={post.body._rawBlocks} serializers={serializers}/>
