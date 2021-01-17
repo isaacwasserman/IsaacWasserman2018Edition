@@ -29,7 +29,7 @@
 #PhotoColumn {
   float: left;
   width: 70%;
-  /* background-color: green; */
+  padding-bottom: 80px;
 }
 
 figure {

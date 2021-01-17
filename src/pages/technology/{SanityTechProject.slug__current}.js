@@ -9,10 +9,13 @@ import '../../resources/css/techProject.css'
 
 function TechProject({data}){
   let images = data.project.media.images.map((image, index) => (
-    <figure>
-      <Img className="Photo" fluid={image.asset.fluid}/>
-      <figcaption>{image.caption}</figcaption>
-    </figure>
+    <div className="figureContainer">
+      <figure>
+        {image._type == "richImage" ? <Img className="Photo" fluid={image.asset.fluid}/> : null}
+        {image._type == "richVideo" ? <video className="Photo" src={image.asset.url} autoPlay={image.autoplay} loop={image.loop} muted={image.mute} playsInline={image.playsInline} controls={image.showControls}></video> : null}
+        <figcaption>{image.caption}</figcaption>
+      </figure>
+    </div>
   ))
 
   return(
@@ -46,11 +49,28 @@ export const query = graphql`
         _rawBlocks
       }
       media {
-        images {
-          caption
-          asset {
-            fluid {
-              ...GatsbySanityImageFluid_noBase64
+      images {
+          ... on SanityRichImage {
+            _key
+            _type
+            caption
+            asset {
+              fluid {
+                ...GatsbySanityImageFluid_noBase64
+              }
+            }
+          }
+          ... on SanityRichVideo {
+            _key
+            _type
+            caption
+            autoplay
+            loop
+            mute
+            playsInline
+            showControls
+            asset {
+              url
             }
           }
         }

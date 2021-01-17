@@ -39,7 +39,7 @@ function TechnologyPage({data}){
 
 export const query = graphql`
   query {
-    projects: allSanityTechProject {
+    projects: allSanityTechProject(sort: {fields: date, order: DESC}) {
       edges {
         node {
           title
