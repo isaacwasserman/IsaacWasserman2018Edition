@@ -10,22 +10,6 @@ import '../../resources/css/cooking.css'
 
 const _ = require('lodash')
 
-let dateString = (date) => {
-  const nth = function(d) {
-    if (d > 3 && d < 21) return 'th';
-    switch (d % 10) {
-      case 1:  return "st";
-      case 2:  return "nd";
-      case 3:  return "rd";
-      default: return "th";
-    }
-  }
-  const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-
-  // return monthNames[date.getMonth()] + " " + date.getDate() + nth(date.getDate()) + ", " + date.getFullYear()
-  return date.toLocaleDateString(undefined, {year: "numeric", month: "2-digit", day: "2-digit"})
-}
-
 const CookingPage = (props) => {
   const sortTags = (selectedTags) => {
     let selectedTagNames = selectedTags.map(tag => tag.name.current)
@@ -58,6 +42,7 @@ const CookingPage = (props) => {
   }
   console.log(props)
   let post = props.data.post
+  const SanityDateFormatter = (date) => (new Date((new Date(date * 1)).toUTCString().replace("GMT","EST"))).toLocaleDateString()
   return(
     <div id="scrollableTarget">
       <Header/>
@@ -72,7 +57,7 @@ const CookingPage = (props) => {
                 <div className="postText">
                   <h1 className="title">{post.title}</h1>
                   <div className="postDetails">
-                    <h6 className="date">{ dateString((post.date != null) ? (new Date(post.date + " UTC")) : (new Date(post._createdAt))) }</h6>
+                    <h6 className="date">{ post.date ? SanityDateFormatter(post.date) : SanityDateFormatter(post._createdAt) }</h6>
                     &nbsp;&nbsp;&nbsp;
                     <ul className="tags">
                       {
@@ -107,7 +92,7 @@ export const query = graphql`
       body {
         _rawBlocks(resolveReferences: {maxDepth: 10})
       }
-      date
+      date(formatString: "x")
       image {
         asset {
           fluid {

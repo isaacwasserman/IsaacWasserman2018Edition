@@ -17,7 +17,7 @@ function TechProject({data}){
       </figure>
     </div>
   ))
-
+  const SanityDateFormatter = (date) => (new Date((new Date(date * 1)).toUTCString().replace("GMT","EST"))).getFullYear()
   return(
     <div>
       <Header/>
@@ -25,7 +25,7 @@ function TechProject({data}){
           <div id="TextColumn">
             <h2 id="ProjectTitle">{data.project.title}</h2>
             <h4 id="Subtitle">{data.project.subtitle}</h4>
-            <h4 id="Year">{(new Date(data.project.date + " UTC")).getUTCFullYear()}</h4>
+            <h4 id="Year">{SanityDateFormatter(data.project.date)}</h4>
             <div id="Description">
               <BlockContent blocks={data.project.description._rawBlocks} serializers={serializers}/>
             </div>
@@ -41,7 +41,7 @@ function TechProject({data}){
 export const query = graphql`
   query($slug__current: String) {
     project: sanityTechProject(slug: { current: { eq: $slug__current } }) {
-      date
+      date(formatString: "x")
       slug {
         current
       }

@@ -8,26 +8,11 @@ import { BlockContent, serializers } from '../../helpers/portableText.js'
 import urlBuilder from '../../helpers/urlBuilder.js'
 import InfiniteScroll from 'react-infinite-scroll-component'
 import CopyToClipboard from 'react-copy-to-clipboard'
+import moment from 'moment'
 
 import '../../resources/css/cooking.css'
 
 const _ = require('lodash')
-
-let dateString = (date) => {
-  const nth = function(d) {
-    if (d > 3 && d < 21) return 'th';
-    switch (d % 10) {
-      case 1:  return "st";
-      case 2:  return "nd";
-      case 3:  return "rd";
-      default: return "th";
-    }
-  }
-  const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-
-  // return monthNames[date.getMonth()] + " " + date.getDate() + nth(date.getDate()) + ", " + date.getFullYear()
-  return date.toLocaleDateString(undefined, {year: "numeric", month: "2-digit", day: "2-digit"})
-}
 
 const CookingPage = (props) => {
   const initialPage = props.data.paginatedCollectionPage
@@ -82,21 +67,7 @@ const CookingPage = (props) => {
     return sorted
   }
 
-  console.log(tagFilter)
-
-  const filterByTag = (posts) => {
-    // console.log(posts)
-    // for(var post of posts){
-    //   let postTags = []
-    //   for(var tag of post.tags){
-    //     postTags.push(tag.name.current)
-    //   }
-    //   let matchesTags = tagFilter.every(val => postTags.includes(val))
-    //   console.log(matchesTags)
-    //   post.matchesTags = matchesTags
-    // }
-    return posts
-  }
+  const SanityDateFormatter = (date) => (new Date((new Date(date * 1)).toUTCString().replace("GMT","EST"))).toLocaleDateString()
 
   return(
     <div id="scrollableTarget">
@@ -104,26 +75,6 @@ const CookingPage = (props) => {
       <div id="cooking-body">
         <h1 className="pageTitle">Cooking Journal:</h1>
         <div id="main">
-          {/*<div id="sidebar-nav" className="link-section">
-            <h5>Filter:</h5>
-            <ul>
-              <li>
-                <Link>#Baking</Link>,
-              </li>
-              <br/>
-              <li>
-                <Link>#Bread</Link>,
-              </li>
-              <br/>
-              <li>
-                <Link>#Miso</Link>,
-              </li>
-              <br/>
-              <li>
-                <Link>#Chicken</Link>
-              </li>
-            </ul>
-          </div>*/}
           <div id="feedContainer">
             <div id="feed">
               <InfiniteScroll
@@ -142,7 +93,7 @@ const CookingPage = (props) => {
                       <div className="postText">
                         <h1 className="title">{post.title}</h1>
                         <div className="postDetails">
-                          <h6 className="date">{ dateString((post.date != null) ? (new Date(post.date + " UTC")) : (new Date(post._createdAt))) }</h6>
+                          <h6 className="date">{ post.date != null ? SanityDateFormatter(post.date) : SanityDateFormatter(post._createdAt) }</h6>
                           &nbsp;&nbsp;&nbsp;
                           <ul className="tags">
                             {

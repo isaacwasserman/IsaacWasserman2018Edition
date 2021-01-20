@@ -56,7 +56,7 @@ module.exports = {
                 body {
                   _rawBlocks(resolveReferences: {maxDepth: 10})
                 }
-                date
+                date(formatString: "x")
                 image {
                   asset {
                     fluid {
