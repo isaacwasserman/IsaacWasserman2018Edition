@@ -79,6 +79,10 @@ figcaption {
   font-family: serif;
 }
 
+#Description h1,h2,h3,h4,h5,h6 {
+  font-family: sans-serif;
+}
+
 #Description a {
   font-family: sans-serif;
   color: #1daeff !important;
